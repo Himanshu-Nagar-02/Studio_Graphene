@@ -1,0 +1,806 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+.LoginNavBar{
+  background-color: #1A1A1A;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: "poppins";
+  color: #626262;
+  font-weight: 400;
+}
+.LoginNavBarLeft{
+  margin-left: 90px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-bottom: 18px;
+}
+.LoginNavBarRight{
+  margin-right: 90px;
+  display: flex;
+  gap: 1em;
+  padding-bottom: 18px;
+}
+
+.LoginNavBarIcons{
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.Wishlist_Bar{
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "poppins";
+  font-size: 40px;
+  font-weight: 275;
+  margin-top: -10px;
+}
+
+.Wishlist_Bar_Left{
+  display: flex;
+  margin-left: 90px;
+}
+
+.Wishlist_Bar_Right{
+  display: flex;
+  margin-right: 90px;
+  margin-top: 20px;
+  font-family: "Work Sans";
+  font-size: 14px;
+  gap:10px;
+  font-weight: 400;
+}
+
+#wishlist_hr{
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: -4px;
+}
+
+#star1{
+  margin-left: 536px;
+  margin-top: -10px;
+}
+.ri-menu-line{
+  display: none;
+}
+.ri-close-line{
+  display: none;
+}
+
+.navbar{
+  color: #FFFFFF;
+  align-items: center;
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -1em;
+}
+
+.Banner{
+  width: 73vw;
+  height: 354.3px;
+  float: right;
+  background-color:#F07E15;
+  margin-top: 20.5vh;
+  font-family: "Syne";
+  font-size: 135px;
+  font-weight: 800;
+  color: #FFFFFF
+}
+#bannertext1{
+  position: absolute;
+  top: 30.5vh;
+  left: 9vw;
+  z-index: 1;
+}
+#banneryear{
+  position: relative;
+  color: #FFFFFF;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke-width: 2px;
+  margin-left: -25px;
+  top:20px;
+}
+#bannertext2{
+  position: relative;
+  margin-left: -13.5vw;
+  top: -35px;
+}
+#bannertext3{
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Work Sans";
+  color: #161615;
+  margin-left: 64.5vw;
+  margin-top: -50px;
+}
+#bannerhr{
+  position: absolute;
+  width: 74vw;
+  left: 0;
+}
+
+.star4{
+  position: absolute;
+  margin-top: -77.5px;
+  right: 23.7vw;
+}
+.star3{
+  position: absolute;
+  margin-left: 50vw;
+  top: 160px;
+}
+.bannermodel{
+  position: absolute;
+  margin-left: 43.5vw;
+  top: 17.7vh;
+}
+.bannershape{
+  position: relative;
+  float: right;
+  margin-left: 40vh;
+  margin-top: -35.2vh;
+}
+
+#seemore{
+  position: absolute;
+  left: 9vw;
+  bottom: 15vh;
+  font-size: 20px;
+  font-weight: 100;
+  word-spacing: 3px;
+}
+#seemore:hover{
+  border: 1px solid white;
+}
+
+.newproduct{
+  margin-top: 13.2em;
+  background-color: #FFFFFF;
+  padding: 90px;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Syne";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.arrows{
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.arrows2{
+  display: none;
+}
+#star2{
+  margin-left: -15px;
+}
+
+.itemlist{
+  background-color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Work Sans";
+  margin-top: -5em;
+}
+.listitems{
+  margin-left: 101px;
+}
+.leftlist{
+  height: 250px;
+}
+li{
+  margin: .5em .5em .5em 0;
+}
+.listitems:hover{
+  font-size: 26px;
+  font-weight: bold;
+}
+.container{
+  background-color: #FFFFFF;
+  display: flex;
+  margin-left: 25em;
+  margin-top: -12em;
+  gap: 8em;
+  min-width: 110px;
+  overflow-x: auto;
+  margin-bottom: -8em;
+}
+.containerimagelogo{
+  width: 2.813em;
+  height: 2.813em;
+  color: #FFFFFF;
+  align-items: center;
+  font-size: 20px;
+  justify-content: space-evenly;
+  background-color: #161615;
+  position: relative;
+  margin-top: -3em;
+  display: flex;
+  float: right;
+}
+.container::-webkit-scrollbar{
+  width: 0;
+}
+.containeritemheading{
+  font-family: "Syne";
+  font-size: 26px;
+  padding-top: 1em;
+}
+.containeritemdiscription{
+  font-family: "Work Sans";
+  font-size: 14px;
+  color: #16161580;
+  width: 303px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#footerimg{
+  position: absolute;
+  width: 100%;
+  height: 550px;
+}
+.newslleter{
+  position: absolute;
+  color: #FFFFFF80;
+}
+#newslleterheading{
+  font-size: 26px;
+  font-family: "Syne";
+  margin-top: 82px;
+  margin-left: 103px;
+}
+#newslleterpara{
+  margin-left: 103px;
+  width: 337px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Work Sans";
+}
+
+.getintouch{
+  position: relative;
+  margin-left: 90px;
+  margin-top: 140px;
+  line-height: 102.6px;
+  font-size: 135px;
+  font-weight: 800;
+  font-family: "Syne";
+  height: 236px;
+  width: 1159px;
+  color: #FFFFFF;
+}
+
+.form-container {
+  position: relative;
+  max-width: 558px;
+  margin-left: 34vw;
+  top: 62px;
+  color: #626262;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+#name{
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 400;
+  color: #626262;
+}
+#email{
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 400;
+  color: #626262;
+}
+#message{
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 400;
+  color: #626262;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 558px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.btn-send {
+  border: 2px solid #F07E15;
+  width: 181px;
+  height: 181px;
+  padding: 10px;
+  font-family: "Work Sans";
+  font-size: 26px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #F07E15;
+  border-radius: 100%;
+  cursor: pointer;
+  margin-left: 26.5vw;
+}
+
+.lastfooter{
+  width: 99vw;
+  height: 66px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-family: "poppins";
+  font-weight: 400;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 24px;
+}
+
+.subheader-content {
+  display: none;
+}
+
+.navbar .list-item {
+  display: inline-block;
+  margin-left: 137px;
+  margin-top: 10px;
+}
+.navbar .list-item:hover {
+  text-decoration: underline;
+}
+.child-list {
+  display: none;
+  border: 1px solid white;
+  font-size: 14px;
+  font-family: "Work Sans";
+  text-transform: uppercase;
+  min-width: 10em;
+  padding-top: 15px;
+}
+.navbar .list-item:hover .child-list {
+  display: block;
+}
+.navbar li {
+  list-style-type:none;
+}
+
+
+
+
+
+/* Making Responsive using Media Querry*/
+@media (max-width:600px) {
+  html,body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+  }
+  .navbar {
+    display: none;
+  }
+  .Wishlist_Bar {
+    display: none;
+  }
+  .subheader-content {
+    display:block;
+}
+  .LoginNavBar{
+      background-color: #1A1A1A;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "poppins";
+      color: #626262;
+      font-weight: 400;
+  }
+  .LoginNavBarLeft{
+      margin-left: -10px;
+      display: flex;
+      gap: 10px;
+      font-size: 10px;
+      align-items: center;
+  }
+  .LoginNavBarRight{
+      margin-right: 0px;
+      display: flex;
+  }
+  .LoginNavBarIcons{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #followUs{
+      display: none;
+  }
+  .Wishlist_Bar{
+      color: aliceblue;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "poppins";
+      font-size: 30px;
+      font-weight: 275;
+  }
+  .Wishlist_Bar_Left{
+      display: flex;
+      margin-left: 20px;
+  }
+  
+  .Wishlist_Bar_Right{
+      display: none;
+  }
+  
+  #wishlist_hr{
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+  #star1{
+      display: none;
+  }
+  
+  .navbar{
+      color: #FFFFFF;
+      align-items: center;
+      font-family: "Work Sans";
+      font-size: 18px;
+      font-weight: 400;
+  }
+  .navbar li{
+      display: none;
+      margin-left: 20px;
+      margin-top: 10px;
+  }
+  .maindiv{
+    position: relative;
+  }
+  .Banner{
+      background-color:#F07E15;
+      margin-top: 28vh;
+      width: 100%;
+      height: 324.19px;
+      font-family: "Syne";
+      font-size: 55px;
+      font-weight: 800;
+      color: #FFFFFF;
+      overflow: hidden;
+  }
+  #bannertext1{
+      position: absolute;
+      top: 5.6em;
+      margin-left: -.6em;
+      font-size: 55px;
+      font-weight: 800;
+      color: #FFFFFF;
+  }
+  #banneryear{
+      position: relative;
+      color: #FFFFFF;
+      -webkit-text-fill-color:transparent;
+      -webkit-text-stroke-width: 2px;
+      margin-left: 1.3em;
+      top: 2.7em;
+      z-index: 1;
+  }
+  #bannertext2{
+      position: relative;
+      margin-left: .3em;
+      top: 2.5em;
+      z-index: 1;
+  }
+  #bannertext3{
+      display: none;
+  }
+  #bannerhr{
+      position: absolute;
+      width: 45vw;
+      margin-top: 3em;
+      left: 0;
+  }
+  .star4{
+      position: absolute;
+      right: 47vw;
+      margin-top: 2.2em;
+  }
+  .star3{
+      overflow: hidden;
+      top: 0px;
+      margin-right: 7em;
+  }
+  #star3image{
+      position: relative;
+      margin-top: 1vh;
+      height: 339.94px;
+      width: 272.7px;
+  }
+  .bannermodel{
+      position: absolute;
+      top: 1.8vh;
+      height: 599.3px;
+      width: 321px;
+  }
+  #bannermodelimage{
+      width: auto;
+      height: 599.3px;
+      margin-left: -1.7em;
+  }
+  .bannershape{
+      position: relative;
+      float: right;
+      height: 799.3px;
+      margin-left: 40vh;
+  }
+  #bannershapeimage{
+      height: 599.3px;
+      margin-bottom: -20px;
+  }
+  .seemorediv{
+    position: absolute;
+    margin-top: 45vh;
+    margin-left: -20px;
+  }
+   #seemore{
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Work Sans";
+      word-spacing: 1px;
+      width: 130px;
+  }  
+  #seemore:hover{
+      border: 1px solid white;
+  }
+
+  .newproduct{
+    position: relative;
+    margin-top: 83vh;
+    background-color: #FFFFFF;
+    padding: 0px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Syne";
+  }
+  .newproductheading{
+    margin-left: 23px;
+    margin-top: 45px;
+    font-size: 40px;
+  }
+
+  #star2{
+    margin-left: 10px;
+    margin-top: .77em;
+  }
+  #newproducthr{
+    width: 659px;
+    margin-left: 20px;
+  }
+  
+  .itemlist{
+    position: relative;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Work Sans";
+    margin-top: 0px;
+  }
+  .listitems{
+    font-weight: 400;
+    font-family: "Work Sans";
+    margin-left: 20px;
+    display:inline;
+    align-items: center;    
+  }
+  li{
+    margin: 0;
+  }
+  .listitems:hover{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .container{
+    background-color: #FFFFFF;
+    position: relative;
+    margin-left: 30px;
+    padding-left: 20px;
+    margin-top: -13em;
+    gap: 2em;
+    overflow-x: auto;
+    margin-bottom: -5em;
+  }
+  .containerimagelogo{
+    width: 2.813em;
+    height: 2.813em;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-evenly;
+    background-color: #161615;
+    position: relative;
+    margin-top: -3em;
+    display: flex;
+    float: right;
+  }
+  .container::-webkit-scrollbar{
+    width: 0;
+  }
+  .containeritemheading{
+    font-family: "Syne";
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .containeritemdiscription{
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 400;
+    color: #16161580;
+    width: 303px;
+    padding-top: 8px;
+    padding-bottom: 0px;
+  }
+  .arrows{
+    display: none;
+  }
+  .arrows2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    gap: 4em;
+    margin-bottom: 8em;
+    font-weight: 800;
+  }
+  
+  .footer{
+    display: initial;
+  }
+  #footerimg{
+    position: relative;
+    width: 100%;
+    height: 635px;
+    margin-top: -30px;
+  }
+  .newslleter{
+    position: relative;
+    color: #FFFFFF80;
+    margin-top: -80vh;
+  }
+  #newslleterheading{
+    font-size: 26px;
+    font-family: "Syne";
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #newslleterpara{
+    width: 290px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Work Sans"; 
+    text-align: center; 
+    margin-left: 40px;
+  }
+  
+  .getintouch{
+    position: relative;
+    margin-left: 20px;
+    line-height: 37.18px;
+    font-size: 55px;
+    font-weight: 800;
+    font-family: "Syne";
+    height: 129px;
+    width: 350px;
+    color: #FFFFFF;
+    margin-top: 38vh;
+    margin-bottom: -8vh;
+  }
+  
+  .form-container {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 20px;
+    color: #626262;
+    margin-top: -72vh;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  #name{
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 400;
+    color: #626262;
+  }
+  #email{
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 400;
+    color: #626262;
+  }
+  #message{
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 400;
+    color: #626262;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 350px;
+    padding: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
+  .form-group textarea {
+    resize: none;
+  }
+  
+  .btn-send {
+    border: 1.15px solid #F07E15;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    font-family: "Work Sans";
+    font-size: 26px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #F07E15;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 48vw;
+    margin-top: 1vh;
+  }
+  
+  .lastfooter{
+    width: 99vw;
+    height: 66px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: "poppins";
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 0px;
+    background-color: black;
+    margin-top: 90px;
+  }  
+}

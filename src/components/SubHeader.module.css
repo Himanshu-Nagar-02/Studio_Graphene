@@ -1,0 +1,125 @@
+.header {
+  position: sticky;
+  top: 2.625em;
+  width: 100%;
+  background-color: black;
+  z-index: 99;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0 20px;
+}
+
+.logo a {
+  font-size: 1.875em;
+  font-family: "Poppins";
+  font-weight: 275; 
+  color: #fff;
+}
+
+.logo a span {
+  color: #8739fa;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+  font-size: 40px;
+  font-weight: 800;
+  transition: 0.2s all ease-in-out;
+  color: #FFFFFF;
+  font-family: "Work Sans";
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.menu:hover a {
+  opacity: 0.4;
+}
+
+.menu a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.menuToggle {
+  display: none;
+}
+
+.menuToggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+.menuIconClose{
+    display: none;
+    /* color: white; */
+}
+
+  .menuToggle:checked ~ .menuIcon {
+    display: none;
+  }
+  .menuToggle:checked ~ .menuIconClose {
+    display: block;
+  }
+  
+@media only screen and (max-width: 950px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    /* align-items: start; */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    height: calc(100vh - 2.625em);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .menu a {
+    margin-left: 12px;
+  }
+
+  .menu .menuItem {
+    margin-bottom: 10px;
+    list-style-type: none;
+    
+  }
+
+  .menuIcon {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 28px;
+  }
+  .menuIcon:hover{
+    border: 1px solid #FFFFFF;
+  }
+  
+  .menuIconClose {
+    /* display: block; */
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .menuIconClose:hover{
+    border: 1px solid #FFFFFF;
+  }
+}
